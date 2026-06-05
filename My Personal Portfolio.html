@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)file:///C:/Users/hdube/OneDrive/HTML.CSS/My%20Personal%20Portfolio.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <!-- Humne apni CSS file ko yahan joda hai -->
+    <link rel="stylesheet" href="./My Personal Portfolio_files/style.css">
+</head>
+<body>
+
+    <!-- Header / Navigation Bar -->
+    <header class="navbar">
+        <div class="logo">MyPortfolio</div>
+        <nav>
+            <ul>
+                <li><a href="http://127.0.0.1:5500/index.html#home">Home</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#about">About Me</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#skills">Skills</a></li>
+                <li><a href="http://127.0.0.1:5500/index.html#projects">Projects</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section (Welcome Area) -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I am <span class="highlight">A Creative Developer</span></h1>
+            <p>Exploring the world of Computer Science, Multimedia, and Full-Stack Web Development.</p>
+            <a href="http://127.0.0.1:5500/index.html#projects" class="btn">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+        <h2>About Me</h2>
+        <p>I am a student passionate about building clean interfaces and learning modern web technologies. I love combining the logic of computer networks with the creativity of digital media and image enhancement.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card">🌐 HTML5</div>
+            <div class="skill-card">🎨 CSS3</div>
+            <div class="skill-card">⚡ JavaScript (Learning)</div>
+            <div class="skill-card">🖼️ Digital Editing</div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project-box">
+                <h3>📝 Task Planner</h3>
+                <p>A simple to-do application built to track daily assignments and study goals.</p>
+            </div>
+            <div class="project-box">
+                <h3>🎨 Creative Portfolio</h3>
+                <p>This exact website! Built using clean HTML5 structural elements and modern CSS layout techniques.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Built with ❤️ using HTML and CSS</p>
+    </footer>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
